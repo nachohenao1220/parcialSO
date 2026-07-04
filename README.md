@@ -1,7 +1,7 @@
-# Simulador MLQ (Multilevel Queue) — versión C++
+# Simulador MLQ (Multilevel Queue)
 
 Implementación en C++17, orientada a objetos, del algoritmo MLQ para el
-Parcial No. 1 de Sistemas Operativos (Universidad del Valle).
+Parcial No. 1 de Sistemas Operativos.
 
 ## Estructura
 
@@ -23,7 +23,7 @@ mlq_cpp/
 └── README.md
 ```
 
-## Cómo funciona (para explicar en el video)
+## Cómo funciona
 
 - **`Process`**: guarda los datos del proceso y calcula sus métricas
   (`waitingTime`, `responseTime`, `turnaroundTime`) a partir de
@@ -37,8 +37,8 @@ mlq_cpp/
   - `hasShorterRemaining`: solo la usa STCF, para saber si conviene
     expropiar al proceso actual por uno con menos tiempo restante.
 
-- **`MLQScheduler::run`**: simulación **tick a tick** (de a 1 unidad de
-  tiempo), fácil de leer:
+- **`MLQScheduler::run`**: simulación (de a 1 unidad de
+  tiempo):
   1. Libera a sus colas los procesos que ya llegaron.
   2. Si hay un proceso corriendo, revisa si toca expropiarlo (llegó algo
      a una cola de mayor prioridad, se acabó el quantum, o llegó un
@@ -56,7 +56,7 @@ mlq_cpp/
 > todos los archivos de prueba del enunciado — porque simplifica mucho
 > el código sin perder generalidad para este ejercicio.
 
-## Esquemas de colas (los tres que pide el enunciado)
+## Esquemas de colas
 
 | Esquema | Cola 1 | Cola 2 | Cola 3 |
 |---|---|---|---|
