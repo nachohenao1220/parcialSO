@@ -1,0 +1,7 @@
+# Archivo: mlq027.txt
+# Formato: etiqueta; BT; AT; Q; Pr
+P1; 10; 0; 1; 2
+P2; 8; 0; 1; 4
+P3; 2; 1; 2; 3
+P4; 15; 3; 1; 1
+P5; 6; 5; 3; 3
