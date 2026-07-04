@@ -17,7 +17,7 @@ mlq_cpp/
 │   ├── MLQScheduler.cpp
 │   ├── FileIO.cpp         # lectura/escritura de archivos
 │   └── main.cpp           # programa principal (CLI)
-├── inputs/                # mlq001.txt (del enunciado), mlq002.txt, mlq003.txt
+├── inputs/                # mlq001.txt, mlq002.txt, mlq003.txt
 ├── outputs/                # se generan al ejecutar
 ├── Makefile
 └── README.md
@@ -52,9 +52,6 @@ mlq_cpp/
   la Cola 2, y esta sobre la Cola 3, sin importar la política interna de
   cada una.
 
-> Esta versión asume tiempos (AT/BT) en números enteros — es el caso de
-> todos los archivos de prueba del enunciado — porque simplifica mucho
-> el código sin perder generalidad para este ejercicio.
 
 ## Esquemas de colas
 
@@ -64,9 +61,6 @@ mlq_cpp/
 | 2 (por defecto) | RR3 | RR5 | PRIORITY |
 | 3 | RR2 | RR3 | STCF |
 
-> Se validó que el esquema por defecto (`RR3,RR5,PRIORITY`) reproduce
-> **exactamente** los valores de WT/CT/RT/TAT del ejemplo del enunciado
-> para `mlq001.txt`.
 
 ## Compilar y ejecutar
 
