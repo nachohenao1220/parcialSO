@@ -1,5 +1,0 @@
-mlq_simulator
-*.o
-outputs/*.txt
-.vscode/
-build/
